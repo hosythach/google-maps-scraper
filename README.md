@@ -286,6 +286,15 @@ Next, follow these steps to initiate a refund:
 
 All $28 will be refunded to you within 24 hours, without any questions and without any hidden charges.
 
+### ❓ Before purchasing the Pro Version, I would like to see the search results for my queries to ensure they meet my expectations.
+
+We understand the importance of ensuring our service meets your expectations before making a purchase. To help you evaluate the quality of our search results, you're welcome to send us a query, such as "South Indian restaurants in Delhi". We will then perform the search and provide you with a zip file containing the search results.
+
+This way, you can sure of the data quality and relevance before deciding to purchase the PRO Version.
+
+You may send us your search query via WhatsApp [here](https://api.whatsapp.com/send?phone=918295042963&text=Kindly%20send%20me%20the%20search%20results%20for%20'___'%20to%20help%20me%20decide%20on%20purchasing%20the%20Pro%20Version).
+
+
 ### ❓ How Do I Scrape Social Details of Profiles like Email, Facebook, Twitter, etc.?
 
 To scrape social details of profiles, follow these steps to use our Website Social Scraper API with the Free Plan, allowing you to scrape contact details of 50 profiles at no cost:
