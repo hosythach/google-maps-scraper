@@ -144,7 +144,19 @@ def merge_sponsored_links(places, sponsored_links):
 
     return places
 
+def get_lang(data):
+     return data['lang']
+
+def add_arguments(data, options):
+        options.add_experimental_option(
+                "prefs", {
+                    "profile.managed_default_content_settings.images": 2,
+                    # "profile.managed_default_content_settings.stylesheet": 2,
+                    # "profile.managed_default_content_settings.fonts": 2,
+                }
+            )
 @browser(
+    add_arguments=add_arguments,
     block_images=True,
     reuse_driver=True,
     keep_drivers_alive=True, 
@@ -189,17 +201,6 @@ class StuckInGmapsException(Exception):
     pass
 
 
-def get_lang(data):
-     return data['lang']
-
-def add_arguments(data, options):
-        options.add_experimental_option(
-                "prefs", {
-                    "profile.managed_default_content_settings.images": 2,
-                    # "profile.managed_default_content_settings.stylesheet": 2,
-                    # "profile.managed_default_content_settings.fonts": 2,
-                }
-            )
 
 @browser(
     # block_resources=[   '.css', '.jpg', '.jpeg', '.png', '.svg', '.gif'],

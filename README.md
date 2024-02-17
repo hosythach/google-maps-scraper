@@ -297,7 +297,7 @@ You may send us your search query via WhatsApp [here](https://api.whatsapp.com/s
 
 ### ❓ How Do I Scrape Social Details of Profiles like Email, Facebook, Twitter, etc.?
 
-To scrape social details of profiles, follow these steps to use our Website Social Scraper API with the Free Plan, allowing you to scrape contact details of 50 profiles at no cost:
+To scrape social details from profiles like Email, Facebook, Twitter, follow these steps to use our Website Social Scraper API which allows you to scrape contact details from up to 50 profiles for free:
 
 1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
    
@@ -320,9 +320,9 @@ Gmaps.places(queries, max=5, key="YOUR_API_KEY")
 python main.py
 ```   
 
-Please note that this feature is available in Both Free and Pro Versions.
+**Please note that scraping social details like Email, Facebook, Twitter is available in Both Free and Pro Versions.**
 
-The first 50 contact details are free. After that, you can upgrade to the Pro Plan to scrape 1,000 contacts for $9, which is affordable considering if you land just one B2B client, you could easily make hundreds of dollars, easily covering the investment.
+Also, The first 50 contact details are free to scrape with the API. After that, you can upgrade to the Pro Plan to scrape 1,000 contacts for $9, which is affordable considering if you land just one B2B client, you could easily make hundreds of dollars, easily covering the investment.
 
 > Disclaimer: This API should not be used for bulk automated mailing, for unethical purposes, or in an unauthorized or illegal manner.
 
