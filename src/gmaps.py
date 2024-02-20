@@ -8,6 +8,7 @@ from .lang import Lang
 from .category import Category
 from .fields import ALL_FIELDS, ALL_SOCIAL_FIELDS, DEFAULT_SOCIAL_FIELDS, Fields, DEFAULT_FIELDS, DEFAULT_FIELDS_WITHOUT_SOCIAL_DATA, ALL_FIELDS_WITHOUT_SOCIAL_DATA
 from .social_scraper import FAILED_DUE_TO_CREDITS_EXHAUSTED, FAILED_DUE_TO_NOT_SUBSCRIBED, FAILED_DUE_TO_UNKNOWN_ERROR, scrape_social
+import time
 
 def create_place_data(query, is_spending_on_ads, max, lang, geo_coordinates, zoom, convert_to_english):
     place_data = {
@@ -256,7 +257,7 @@ class Gmaps:
   SORT_BY_NOT_HAS_PHONE = [Fields.PHONE, False]
   SORT_BY_HAS_PHONE = [Fields.PHONE, True]
 
-  DEFAULT_SORT = [SORT_BY_REVIEWS_DESCENDING, SORT_BY_HAS_WEBSITE, SORT_BY_NOT_HAS_LINKEDIN, SORT_BY_IS_SPENDING_ON_ADS]
+  DEFAULT_SORT = [SORT_BY_RATING_DESCENDING, SORT_BY_REVIEWS_DESCENDING, SORT_BY_HAS_WEBSITE, SORT_BY_NOT_HAS_LINKEDIN, SORT_BY_IS_SPENDING_ON_ADS]
   ALL_REVIEWS = None
 
   MOST_RELEVANT = "most_relevant" 
@@ -341,6 +342,7 @@ class Gmaps:
         result_item = process_result(min_reviews, max_reviews, category_in, has_website, has_phone, min_rating, max_rating, sort, key, scrape_reviews, reviews_max, reviews_sort, fields, lang, should_scrape_socials, convert_to_english,use_cache,places_obj)
 
         result.append(result_item)
+        time.sleep(5)
       
       all_places = sort_places(merge_places(result), sort)
       write_output("all", all_places, fields)
