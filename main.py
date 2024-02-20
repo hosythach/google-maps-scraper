@@ -17,5 +17,6 @@ lines = read_file_to_list(file_path)
 print(lines)
 
 queries =  read_file_to_list(file_path)
-# Gmaps.Cities.Vietnam
-Gmaps.places(queries, lang=Gmaps.Lang.Vietnamese, convert_to_english=False, geo_coordinates="Vietnam", sort = Gmaps.SORT_BY_RATING_DESCENDING)
+# queries = ["cafe ở hà nội"]
+# Gmaps.places(queries, lang=Gmaps.Lang.Vietnamese, convert_to_english=False, geo_coordinates="Vietnam", sort = Gmaps.SORT_BY_RATING_DESCENDING, fields = [Gmaps.Fields.NAME, Gmaps.Fields.ADDRESS])
+Gmaps.places(queries, lang=Gmaps.Lang.Vietnamese, convert_to_english=False, sort = Gmaps.SORT_BY_RATING_DESCENDING, fields = [Gmaps.Fields.NAME, Gmaps.Fields.ADDRESS])
